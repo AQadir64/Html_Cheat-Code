@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cheat with HTML</title>
+    <meta http-equiv="refresh" content="5;url=http://127.0.0.1:5500/HTML-5%20Cheat%20Code/Semantic_Markups.html">
   </head>
 
   <body>
@@ -174,21 +175,54 @@
       </fieldset>
     </form>
 
+    <!-- select vs datalist -->
+    <br />
+    <div>
+      <label for="datalist">datalist</label>
+      <label for="ice-cream-choice">Choose a flavor:</label>
+      <input
+        list="ice-cream-flavors"
+        id="ice-cream-choice"
+        name="ice-cream-choice"
+      />
+      <datalist id="ice-cream-flavors">
+        <option value="Chocolate"> </option>
+        <option value="Coconut"> </option>
+        <option value="Mint"> </option>
+        <option value="Strawberry"> </option>
+        <option value="Vanilla"> </option>
+      </datalist>
+    </div>
+    <br />
+    <div>
+      <label for="select">select</label>
+
+      <select id="ice-cream-flavors">
+        <option value="Chocolate"> Chocolate</option>
+        <option value="Coconut">Coconut </option>
+        <option value="Mint">"Mint </option>
+        <option value="Strawberry">Strawberry </option>
+        <option value="Vanilla">Vanilla </option>
+      </select>
+    </div>
+
     <!-- All About Buttons -->
     <br />
     <button>Im Button</button>
     <br />
     <br />
     <!-- Images -->
-
-    <a href="Images/img.jpg" target="_blank">
-      <img
-        src="Images/img.jpg"
-        alt="This is a Sample Image"
-        height="300px"
-        width="300px"
-      />
-    </a>
+    <figure>
+      <a href="Images/img.jpg" target="_blank">
+        <img
+          src="Images/img.jpg"
+          alt="This is a Sample Image"
+          height="300px"
+          width="300px"
+        />
+      </a>
+      <figcaption>This is a Sample Image</figcaption>
+    </figure>
 
     <!-- Quotations And Everything -->
     <blockquote cite="abc.com">
@@ -213,6 +247,30 @@
       height="300"
       width="500"
     ></iframe>
+    <br />
+    <!-- svg with start -->
 
+    <button name="favorite" type="button">
+      <svg aria-hidden="true" viewBox="0 0 100 20">
+        <path d="M7 9L5 7.5 3 9V6L1 4h3l1-3 1 3h3L7 6z" />
+      </svg>
+      Add to favorites
+    </button>
+
+    <!-- meter and progress  -->
+
+    <article>
+      <h3>fuel level</h3>
+      <meter value="25" min="0" max="100" optimum="50" low="50" high="80">
+      </meter>
+      <br />
+      <progress value="70" max="100">70 %</progress>
+    </article>
+
+    <!-- proper way to use time
+       -->
+<article>
+  <p> The fajr prayer time is at <time datetime="5:40">5:40 am</time></p>
+</article>
   </body>
 </html>
